@@ -1,8 +1,8 @@
 <template>
   <div>
     <NavBar />
-    <!-- <Info id="info" />
-    <About id="about" />
+    <Info id="info" />
+    <!-- <About id="about" />
     <Skills id="skills" />
     <Work id="work" />
     <Contact id="contact" /> -->
@@ -12,7 +12,7 @@
 <script>
 // @ is an alias to /src
 import NavBar from "@/components/NavBar.vue";
-// import Info from "@/components/Info.vue";
+import Info from "@/components/Info.vue";
 // import About from "@/components/About.vue";
 // import Skills from "@/components/Skills.vue";
 // import Work from "@/components/Work.vue";
@@ -22,7 +22,7 @@ export default {
   name: "Home",
   components: {
     NavBar,
-    // Info,
+    Info,
     // About,
     // Skills,
     // Work,

@@ -56,7 +56,7 @@ export default {
   },
   methods: {
     checkScreen() {
-      if (window.innerWidth < 600) {
+      if (window.innerWidth < 750) {
         this.desktop = false;
       } else {
         this.desktop = true;
@@ -155,7 +155,7 @@ button:hover {
   top: 2rem;
   background-color: #4070f4;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .nav__active {
     display: block;
     position: fixed;
@@ -207,17 +207,10 @@ button:hover {
     top: -15px;
     justify-content: space-evenly;
     left: 0px;
-    /* background-color: rgba(64, 112, 244, 0.8); */
     z-index: 1000;
-    /* border-bottom: 1px solid rgba(64, 112, 244, 0.8); */
-  }
-  .nav__link__mobile {
-    /* margin-top: auto; */
   }
 
   header {
-    /* background-color: rgba(64, 112, 244, 0.8); */
-
     justify-content: center;
   }
 }

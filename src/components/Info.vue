@@ -45,6 +45,12 @@ export default {};
   background-color: #d32f2f;
 }
 .info__img {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
+}
+@media only screen and (max-width: 750px) {
+  .intro__container {
+    flex-direction: column;
+  }
 }
 </style>
