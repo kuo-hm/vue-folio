@@ -15,19 +15,34 @@
       <nav class="nav" v-if="desktop">
         <div class="nav__menu" id="nav-menu">
           <ul :class="Toggle ? 'nav__list__mobile' : 'nav__list'">
-            <li :class="Toggle ? 'nav__link__mobile' : 'nav__link'">
+            <li
+              @click="hideNavBar"
+              :class="Toggle ? 'nav__link__mobile' : 'nav__link'"
+            >
               <a href="#info" v-smooth-scroll>Home</a>
             </li>
-            <li :class="Toggle ? 'nav__link__mobile' : 'nav__link'">
+            <li
+              @click="hideNavBar"
+              :class="Toggle ? 'nav__link__mobile' : 'nav__link'"
+            >
               <a href="#about" v-smooth-scroll>About</a>
             </li>
-            <li :class="Toggle ? 'nav__link__mobile' : 'nav__link'">
+            <li
+              @click="hideNavBar"
+              :class="Toggle ? 'nav__link__mobile' : 'nav__link'"
+            >
               <a href="#skills" v-smooth-scroll>Skills</a>
             </li>
-            <li :class="Toggle ? 'nav__link__mobile' : 'nav__link'">
+            <li
+              @click="hideNavBar"
+              :class="Toggle ? 'nav__link__mobile' : 'nav__link'"
+            >
               <a href="#work" v-smooth-scroll>Work</a>
             </li>
-            <li :class="Toggle ? 'nav__link__mobile' : 'nav__link'">
+            <li
+              @click="hideNavBar"
+              :class="Toggle ? 'nav__link__mobile' : 'nav__link'"
+            >
               <a href="#contact" v-smooth-scroll>Contact</a>
             </li>
           </ul>
@@ -55,6 +70,10 @@ export default {
     this.checkScreen();
   },
   methods: {
+    hideNavBar() {
+      if (this.desktop) this.Toggle = false;
+      return;
+    },
     checkScreen() {
       if (window.innerWidth < 750) {
         this.desktop = false;
@@ -66,7 +85,6 @@ export default {
     navToggle() {
       this.Toggle = !this.Toggle;
       this.desktop = !this.desktop;
-      console.log(this.Toggle);
     },
     scrollToMyEl() {
       const myEl = this.$refs.myEl || this.$el || document.getElementById();

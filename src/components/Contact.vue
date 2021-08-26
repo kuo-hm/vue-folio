@@ -46,6 +46,7 @@ export default {};
 <style scoped>
 .contact {
   height: 80vh;
+  margin-top: 50px;
 }
 .contact-form {
   display: flex;
