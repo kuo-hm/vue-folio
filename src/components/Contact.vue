@@ -51,6 +51,7 @@ export default {};
 }
 .contact {
   height: 80vh;
+  overflow-x: hidden;
 }
 .contact-form {
   display: flex;

@@ -67,9 +67,10 @@ h2::after {
   grid-row-gap: 0px;
   margin: 0 auto;
   width: 80%;
+  overflow-x: hidden;
 }
 .work img {
-  width: 100%;
+  width: 80%;
   height: 100%;
   object-fit: cover;
   cursor: pointer;

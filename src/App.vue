@@ -13,10 +13,10 @@ export default {
             value: "#fff",
           },
           image: "",
-          position: "50% 50%",
+          position: "0% 0%",
           repeat: "no-repeat",
 
-          opacity: 1,
+          opacity: 0,
         },
         backgroundMask: {
           composite: "destination-out",
@@ -29,7 +29,7 @@ export default {
           enable: false,
         },
         fullScreen: {
-          enable: true,
+          enable: false,
           zIndex: 1,
         },
         detectRetina: true,
@@ -518,7 +518,6 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 * {
-  position: relative;
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
@@ -528,7 +527,8 @@ export default {
 #tsparticles {
   position: fixed;
   height: 100vh;
-  max-width: 100%;
+  width: 100%;
+  /* max-width: 100%; */
   opacity: 0.2;
   z-index: -1000;
 }

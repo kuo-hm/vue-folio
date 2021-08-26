@@ -50,8 +50,8 @@
       </nav>
     </transition>
     <div class="nav__toggle" @click="navToggle">
-      <i :class="Toggle ? ' far fa-minus-square nav__active' : ''"></i>
-      <i :class="Toggle ? '' : 'far fa-caret-square-down nav__active '"></i>
+      <i :class="Toggle ? ' fas fa-minus nav__active' : ''"></i>
+      <i :class="Toggle ? '' : 'fas fa-plus nav__active '"></i>
     </div>
   </header>
 </template>
@@ -142,7 +142,7 @@ header {
 .nav__link {
   position: relative;
 }
-.far {
+.fas {
   display: none;
 }
 .nav__link:hover::after {
@@ -174,14 +174,21 @@ button:hover {
   background-color: #4070f4;
 }
 @media only screen and (max-width: 750px) {
+  .logo {
+    cursor: pointer;
+    margin-left: auto;
+    opacity: 1;
+    transition: opacity 0.3s ease 0s;
+  }
   .nav__active {
     display: block;
     position: fixed;
     z-index: 50000;
     cursor: pointer;
     margin-left: auto;
-    top: 0;
-    right: 10px;
+    top: 8px;
+    left: 10px;
+    color: #4070f4;
   }
   .appear-enter-active {
     opacity: 1;
@@ -207,8 +214,9 @@ button:hover {
   .nav__menu {
     display: block;
   }
-  .far {
-    font-size: 3rem;
+  .fas {
+    font-size: 2rem;
+    color: #4070f4;
   }
   .nav__link {
     display: none;
@@ -228,7 +236,9 @@ button:hover {
   }
 
   header {
-    justify-content: center;
+    justify-content: flex-end;
+    display: grid;
+    overflow-x: hidden;
   }
 }
 </style>

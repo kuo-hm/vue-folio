@@ -51,6 +51,13 @@ export default {};
 @media only screen and (max-width: 750px) {
   .intro__container {
     flex-direction: column;
+    overflow-x: hidden;
+  }
+  h1 {
+    text-align: center;
+  }
+  .info__img {
+    width: 100%;
   }
 }
 </style>

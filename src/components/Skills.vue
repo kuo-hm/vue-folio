@@ -136,6 +136,7 @@ li {
 @media only screen and (max-width: 750px) {
   .skills__list {
     flex-direction: column;
+    overflow-x: hidden;
   }
 }
 </style>

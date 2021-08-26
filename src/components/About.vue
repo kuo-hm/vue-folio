@@ -107,6 +107,7 @@ export default {};
 @media only screen and (max-width: 750px) {
   .about {
     flex-direction: column;
+    overflow-x: hidden;
   }
   .about__img {
     width: 100%;
