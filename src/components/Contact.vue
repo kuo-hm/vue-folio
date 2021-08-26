@@ -51,7 +51,7 @@ export default {};
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  max-width: 40%;
   margin: 0 auto;
   margin-top: 40vh;
   margin-bottom: 40vh;

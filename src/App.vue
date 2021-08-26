@@ -1,10 +1,5 @@
 <template>
-  <Particles
-    id="tsparticles"
-    :particlesInit="particlesInit"
-    :particlesLoaded="particlesLoaded"
-    :options="Anime"
-  />
+  <Particles id="tsparticles" :options="Anime" />
   <router-view />
 </template>
 <script>
@@ -20,7 +15,7 @@ export default {
           image: "",
           position: "50% 50%",
           repeat: "no-repeat",
-          size: "cover",
+
           opacity: 1,
         },
         backgroundMask: {
@@ -533,7 +528,7 @@ export default {
 #tsparticles {
   position: fixed;
   height: 100vh;
-  width: 100%;
+  max-width: 100%;
   opacity: 0.2;
   z-index: -1000;
 }
