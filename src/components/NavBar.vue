@@ -91,7 +91,7 @@ export default {
 
       this.$smoothScroll({
         scrollTo: myEl, // scrollTo is also allowed to be number
-        hash: "#sampleHash", // required if updateHistory is true
+        hash: "#info", // required if updateHistory is true
       });
     },
   },
@@ -208,8 +208,7 @@ button:hover {
     display: block;
   }
   .far {
-    font-size: 2rem;
-    color: #4070f4;
+    font-size: 3rem;
   }
   .nav__link {
     display: none;

@@ -44,9 +44,13 @@ export default {};
 </script>
 
 <style scoped>
+@media only screen and (min-width: 750px) {
+  .contact {
+    margin-top: 30vh;
+  }
+}
 .contact {
   height: 80vh;
-  margin-top: 50px;
 }
 .contact-form {
   display: flex;
