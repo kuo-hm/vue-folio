@@ -4,8 +4,8 @@
     <Info id="info" />
     <About id="about" />
     <Skills id="skills" />
-    <!--  <Work id="work" />
-    <Contact id="contact" /> -->
+    <Work id="work" />
+    <!--  <Contact id="contact" /> -->
   </div>
 </template>
 
@@ -15,7 +15,7 @@ import NavBar from "@/components/NavBar.vue";
 import Info from "@/components/Info.vue";
 import About from "@/components/About.vue";
 import Skills from "@/components/Skills.vue";
-// import Work from "@/components/Work.vue";
+import Work from "@/components/Work.vue";
 // import Contact from "@/components/Contact.vue";
 
 export default {
@@ -25,7 +25,7 @@ export default {
     Info,
     About,
     Skills,
-    // Work,
+    Work,
     // Contact,
   },
 };

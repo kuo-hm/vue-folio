@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="work__container">
     <h2 data-aos="fade-up" data-aos-duration="1000">
       Work
     </h2>
@@ -37,9 +37,12 @@
 </template>
 
 <style scoped>
+.work__container {
+  height: 100vh;
+}
 h2 {
   margin: 50px;
-  margin-top: 40vh;
+  /* margin-top: 40vh; */
   position: relative;
   font-size: 2em;
   text-align: center;
