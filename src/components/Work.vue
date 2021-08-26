@@ -38,7 +38,7 @@
 
 <style scoped>
 .work__container {
-  height: 100vh;
+  height: 80vh;
 }
 h2 {
   margin: 50px;

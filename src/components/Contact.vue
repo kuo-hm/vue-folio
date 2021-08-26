@@ -1,43 +1,41 @@
 <template>
   <!-- contact form -->
-  <div
-    class="contact-form"
-    data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom"
-  >
-    <form action="https://formspree.io/f/xvodvnzg" method="POST">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input
-          type="text"
-          class="form-control"
-          id="name"
-          name="name"
-          placeholder="Enter your name"
-        />
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input
-          type="email"
-          class="form-control"
-          id="email"
-          name="_replyto"
-          placeholder="Enter your email"
-        />
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea
-          class="form-control"
-          id="message"
-          name="message"
-          rows="3"
-          placeholder="Enter your message"
-        ></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+  <div class="contact">
+    <div class="contact-form" data-aos="fade-up">
+      <form action="https://formspree.io/f/xvodvnzg" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="_replyto"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="3"
+            placeholder="Enter your message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
   </div>
 </template>
 
@@ -46,16 +44,18 @@ export default {};
 </script>
 
 <style scoped>
+.contact {
+  height: 80vh;
+}
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 40%;
+  max-width: 500px;
   margin: 0 auto;
-  margin-top: 40vh;
-  margin-bottom: 40vh;
-  height: 100%;
+  /* margin-top: 30vh; */
+  /* margin-bottom: 40vh; */
   padding: 5rem;
   border: 1px solid black;
   border-radius: 50px;
