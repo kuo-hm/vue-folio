@@ -1,3 +1,4 @@
+@media only screen and (max-width: 750px) {
 <template>
   <div class="skills__container">
     <h2 data-aos="fade-up" data-aos-duration="1000">
@@ -131,5 +132,10 @@ li {
   padding: 20px;
   border: 1px solid #d32f2f;
   margin: 50px;
+}
+@media only screen and (max-width: 750px) {
+  .skills__list {
+    flex-direction: column;
+  }
 }
 </style>
