@@ -104,4 +104,16 @@ export default {};
 .fab.fa-github {
   color: black;
 }
+@media only screen and (max-width: 750px) {
+  .about {
+    flex-direction: column;
+  }
+  .about__img {
+    width: 100%;
+  }
+  .about__text {
+    flex-direction: column;
+    text-align: left;
+  }
+}
 </style>
